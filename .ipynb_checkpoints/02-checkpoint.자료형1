@@ -1,0 +1,148 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3e005620-5e1a-4f95-95c6-cc44edf4c08e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "2. 문자열"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "55b7f74f-aadf-42eb-ae8a-f4ed0e90621c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#문자열 안에 작은 따옴표 or 큰따옴표를 표현\n",
+    "food = \"python's favorite food is perl\"\n",
+    "print(food)\n",
+    "\n",
+    "say = \"\"\\python is very easy.\\\" he says\"\n",
+    "print(say)\n",
+    "\n",
+    "multiline = \"Life is too short\\nYou need python\"\n",
+    "print(mutiline)\n",
+    "\n",
+    "multiline = '''\n",
+    "Life is too short\n",
+    "You nedd python\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "6389d415-1b36-43b0-8cc9-6fbbeef7d3b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "pythonpython\n",
+      "==================================================\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = \"python\"\n",
+    "print (a * 2)\n",
+    "print('=' * 50)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d38f0e98-fd34-4bab-b161-7c7df0726c7e",
+   "metadata": {},
+   "source": [
+    "- 문자열 인덱스\n",
+    "![문자열](https://i.postimg.cc/W44nS9cX/str-index.png)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "616525bd-086d-4215-987d-b266f4185996",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "e\n",
+      "L\n",
+      "n\n",
+      "o\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = \"Life is too short, You need python\"\n",
+    "print(a[3])\n",
+    "print(a[0])\n",
+    "print(a[-1])\n",
+    "print(a[-2])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "eb793d6e-5bf7-4d88-9995-b1f8de0f8674",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Life \n",
+      "is\n",
+      "You need python\n",
+      "Life is too short\n",
+      "Life is too short, You need python\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = \"Life is too short, You need python\"\n",
+    "print(a[0:5])\n",
+    "print(a[5:7])\n",
+    "print(a[19:])\n",
+    "print(a[:17])\n",
+    "print(a[:])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6a4d0db8-0fb9-404a-b68d-bae5d45968ca",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

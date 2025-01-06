@@ -1,0 +1,131 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "2695fe5b-1e45-4a68-8b71-3e19a01c4258",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "123\n",
+      "-178\n",
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#주석(단축키 ctrl + /)\n",
+    "\n",
+    "#정수형\n",
+    "a = 123\n",
+    "b = -178\n",
+    "c = 0\n",
+    "\n",
+    "print(a)\n",
+    "print(b)\n",
+    "print(c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "831d28c6-1839-4e98-bba4-f87a2c0a18f6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1.2 520.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#실수형\n",
+    "a = 1.2\n",
+    "b = 5.2E2 #5.2 X 10^2\n",
+    "\n",
+    "print(a,b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "9c0723a5-e49b-44b7-a038-468874c7b8d4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "127\n",
+      "2303\n"
+     ]
+    }
+   ],
+   "source": [
+    "#8진수 16진수\n",
+    "a = 0o177\n",
+    "print(a)\n",
+    "\n",
+    "b = 0x8ff\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "36542e3d-61c5-435e-8378-dc992cb5526e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n",
+      "81\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 사칙연산\n",
+    "a = 3\n",
+    "b = 4\n",
+    "print(7 // 3) # 몫\n",
+    "print(a ** b) # 제곱"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a3a8275f-f10c-4259-8f89-2faf968926dd",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
