@@ -1,0 +1,320 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "2c90e21c-0b45-46d7-8ddb-dd1fde45180f",
+   "metadata": {},
+   "source": [
+    "### 튜플"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "3ddbe35e-efaa-4075-bc20-339b52164f6f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "(2, 'a', 'b')\n",
+      "(1, 2, 'a', 'b', 3, 4)\n",
+      "(3, 4, 3, 4, 3, 4)\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "#튜플은 수정과 삭제를 할 수 X\n",
+    "t1 = (1,2,'a','b')\n",
+    "t2 = (3,4)\n",
+    "# del t1[0]\n",
+    "#t1[0] = 'c'\n",
+    "\n",
+    "print(t1[0])\n",
+    "print(t1[1:])\n",
+    "print(t1 + t2)\n",
+    "print(t2 * 3)\n",
+    "print(len(t1))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "77f62000-0c55-44c0-9663-2c38a475498e",
+   "metadata": {},
+   "source": [
+    "### 딕셔너리"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "47c8bea4-5da0-44a3-9ae2-55bde2472784",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1: 'a'}\n",
+      "{1: 'a', 'name': 'pey'}\n",
+      "{1: 'a', 'name': 'jack'}\n",
+      "{1: 'a'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = {1:'a'}\n",
+    "print(a)\n",
+    "\n",
+    "a['name'] = 'pey' #추가\n",
+    "print(a)\n",
+    " \n",
+    "a['name'] = 'jack' #수정\n",
+    "print(a)\n",
+    "\n",
+    "del a['name'] #삭제\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "01e1da53-8b8d-4784-95a1-607d8a9e4336",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "closing parenthesis ']' does not match opening parenthesis '{' (625537775.py, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[28], line 1\u001b[1;36m\u001b[0m\n\u001b[1;33m    a = {1:'a', 1:'b']\u001b[0m\n\u001b[1;37m                     ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m closing parenthesis ']' does not match opening parenthesis '{'\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = {1:'a', 1:'b']\n",
+    "print(a)\n",
+    "\n",
+    "#키는 리스트 사용x , 튜플만 사용가능\n",
+    "a = {[1,2]:'hi}\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "69faaf9f-ad16-4c31-8cad-2e535c159051",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "dict_keys(['name', 'phone'])\n",
+      "name\n",
+      "phone\n",
+      "dict_values(['pey', '010-2222-2222'])\n",
+      "pey\n",
+      "010-2222-2222\n"
+     ]
+    }
+   ],
+   "source": [
+    "# 딕셔너리 함수\n",
+    "a = {'name':'pey', 'phone':'010-2222-2222'}\n",
+    "print(a.keys())\n",
+    "\n",
+    "for k in a.keys():#key 값 구하기\n",
+    "    print(k)\n",
+    "\n",
+    "print(a.values())\n",
+    "\n",
+    "for v in a.values() : #값 구하기\n",
+    "   print(v)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "aefc4178-6f6d-4134-815c-844fb0a274a0",
+   "metadata": {},
+   "source": [
+    "### 6.집합"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "7ebce712-f950-414c-bc46-49554f2dee0f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{1, 2, 3, 4, 5}\n",
+      "{'h', 'l', 'o', 'e'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1 = set([1,2,3,4,5,5,5])\n",
+    "print(s1)\n",
+    "\n",
+    "s2 = set(\"hello\")\n",
+    "print(s2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "a7464d4b-07be-4873-a8d3-72924010f78b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "s1 = set([1,2,3])\n",
+    "list1 = list(s1) #집합은 순서가 없기때문에 인덱스를 사용해 값을 가져오고 싶으면 list, 튜플러 바꿔준 후 혹은 list1 = tuple(s1)\n",
+    "print(list1[0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "3179d24e-6ca3-4a49-bf23-daddb1406d87",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{4, 5, 6}\n",
+      "{1, 2, 3, 4, 5, 6, 7, 8, 9}\n",
+      "{1, 2, 3}\n",
+      "{8, 9, 7}\n"
+     ]
+    }
+   ],
+   "source": [
+    "#교집합 ,합집합, 차집합\n",
+    "s1 = set([1,2,3,4,5,6])\n",
+    "s2 = set([4,5,6,7,8,9])\n",
+    "\n",
+    "print(s1 & s2) #교집합\n",
+    "print(s1 | s2) #합집합\n",
+    "print(s1 - s2) #차집합\n",
+    "print(s2 - s1) #차집합\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "84c55896-ccc6-4ecc-96aa-6c1ceb2542dd",
+   "metadata": {},
+   "source": [
+    "### 8.변수"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "8632b77d-798b-4beb-b2cf-5e044697dc20",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "python\n",
+      "python\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = b= 'python' # 여러개의 변수에 한꺼번에  값 대입\n",
+    "print(a)\n",
+    "print(b)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "9de0d853-d430-459a-aabe-4e8db66a2726",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "python\n",
+      "life\n"
+     ]
+    }
+   ],
+   "source": [
+    "a,b = ('python', 'life') # 여러개의 변수에 한꺼번에  값 대입(튜플)\n",
+    "print(a)\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "ba9c2cd9-da2a-48c7-8aaa-6702eeb87601",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "python\n",
+      "life\n"
+     ]
+    }
+   ],
+   "source": [
+    "a,b = ('python', 'life') # 여러개의 변수에 한꺼번에  값 대입(리스트)\n",
+    "print(a)\n",
+    "print(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bba2c6d3-4c86-4ca2-8b42-1f336d29f50a",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
