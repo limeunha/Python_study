@@ -1,0 +1,613 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "9dc59814-9362-4d0a-bf4d-2a42209b6550",
+   "metadata": {},
+   "source": [
+    "### 1.if문"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "1d22f6ee-7be7-4894-bd9a-99307938a1b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "택시타고가기\n"
+     ]
+    }
+   ],
+   "source": [
+    "# if문\n",
+    "\n",
+    "money = True\n",
+    "if money:\n",
+    "    print('택시타고가기')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "45ba47bb-2de8-4ffa-a6f6-c005ab138d72",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "택시타고 가기\n"
+     ]
+    }
+   ],
+   "source": [
+    "# if else문\n",
+    "money = True\n",
+    "if money:\n",
+    "    print('택시타고 가기')\n",
+    "else:\n",
+    "    print('걸어가기')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "74a1b9a1-5edb-4960-aff9-f6dbcb4655e7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "택시타고 가기\n",
+      "뛰어가기\n"
+     ]
+    }
+   ],
+   "source": [
+    "# if else문\n",
+    "money = True\n",
+    "if money:\n",
+    "    print('택시타고 가기')\n",
+    "else:\n",
+    "   print('걸어가기')\n",
+    "print('뛰어가기')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "cc596efc-055e-42f1-9934-4071b8e447ce",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n",
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# and, or, not..\n",
+    "\n",
+    "x = 3\n",
+    "y = 2\n",
+    "\n",
+    "print(x < y and x > y)\n",
+    "print(x == y or x >= y)\n",
+    "print(not x != y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "43b9236a-6d60-46f7-96c8-9995801c6585",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "True\n",
+      "True\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "# in,not in\n",
+    "print(1 in [1,2,3]) #1이 리스트 안에 있는가?\n",
+    "print(1 not in [1,2,3]) #1이 리스트 안에 없는가\n",
+    "print('a' in ['a','b','c'])\n",
+    "print('j' not in 'python')\n",
+    "print('j' in 'python')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "e0956f8e-fd16-4240-a74d-db2837689b00",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "택시타고가기\n"
+     ]
+    }
+   ],
+   "source": [
+    "pocket = ['paper','cellphone']\n",
+    "card = True\n",
+    "\n",
+    "if 'money' in pocket:\n",
+    "    print('택시타고가기')\n",
+    "else:\n",
+    "    if card:\n",
+    "        print('택시타고가기')\n",
+    "    else:\n",
+    "        print('걸어가기')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "c4262ffa-fae8-45d8-b087-84522c753594",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "unindent does not match any outer indentation level (<string>, line 8)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m<string>:8\u001b[1;36m\u001b[0m\n\u001b[1;33m    else:\u001b[0m\n\u001b[1;37m         ^\u001b[0m\n\u001b[1;31mIndentationError\u001b[0m\u001b[1;31m:\u001b[0m unindent does not match any outer indentation level\n"
+     ]
+    }
+   ],
+   "source": [
+    "pocket = ['paper','cellphone']\n",
+    "card = True\n",
+    "\n",
+    "if 'money' in pocket:\n",
+    "    print('택시타고가기')\n",
+    "elif card:\n",
+    "        print('택시타고가기')\n",
+    " else:\n",
+    "        print('걸어가기')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "90d5f9ae-3d83-47c3-8c6c-6f631c8af35b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 조건부 표현식(if else 단축)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "05dcc5a5-6423-4efc-89a0-7e7dafb18948",
+   "metadata": {},
+   "source": [
+    "### 2.while문"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "ecbcf64e-ce69-452d-b42b-2f25769c33ef",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "i = 1\n",
+    "while i <= 10:\n",
+    "    print(i)\n",
+    "    i += 1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "bca86ddb-4368-4a74-9dbe-16d70b8f0296",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "55\n"
+     ]
+    }
+   ],
+   "source": [
+    "i = 1\n",
+    "sum =0\n",
+    "\n",
+    "\n",
+    "while i <= 10:\n",
+    "    #print(i)\n",
+    "    sum += i\n",
+    "    i += 1\n",
+    "\n",
+    "print(sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "e119512a-91c6-4569-8281-16301186a22d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "i = 1\n",
+    "\n",
+    "\n",
+    "\n",
+    "while i <= 10:\n",
+    "    print(i)\n",
+    "    i += 1\n",
+    "    if i == 5:\n",
+    "        break\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "ae70431e-be13-40c9-9a2c-41d61ac44a96",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n",
+      "5\n",
+      "7\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 0\n",
+    "\n",
+    "while a < 10:\n",
+    "    a+=1\n",
+    "    if a % 2 == 0:\n",
+    "        continue\n",
+    "        \n",
+    "    print(a)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "51902a50-0cb9-443a-a4c8-c16c7521f131",
+   "metadata": {},
+   "source": [
+    "### 3.for문"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "2bf91524-39a4-47db-a89b-ebe9e159d10e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "test_list = [1,2,3,4,5]\n",
+    "\n",
+    "\n",
+    "for i in test_list:\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "f28163d5-6013-4bf6-951c-bb68962ef274",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 2\n",
+      "3 4\n",
+      "5 6\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [(1,2),(3,4),(5,6)]\n",
+    "\n",
+    "for (first, last) in a:\n",
+    "    print(first, last)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "83ea9244-847a-46e8-a94c-e319f4de2c8b",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "unmatched ')' (699135137.py, line 5)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[58], line 5\u001b[1;36m\u001b[0m\n\u001b[1;33m    print(i))\u001b[0m\n\u001b[1;37m            ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m unmatched ')'\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [(1,2),(3,4),(5,6)]\n",
+    "\n",
+    "for i in test_list\n",
+    "    if i == 3: break\n",
+    "        print(i))\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "bdc57e56-9340-41d0-8717-d417876af959",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+      "[1, 3, 5, 7, 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# range\n",
+    "# 수지 범위를 이용해 리스트를 만들어준다\n",
+    "\n",
+    "a = range(10)\n",
+    "print(list(a)) #출력 할때는 list 함수 사용\n",
+    "\n",
+    "b = range(1,11)\n",
+    "print(list(b))\n",
+    "\n",
+    "c = range(1,11,2)\n",
+    "print(list(c))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "90932cb5-920c-484a-b67b-04479eb6df5b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n",
+      "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+      "[1, 3, 5, 7, 9]\n",
+      "[10, 9, 8, 7, 6, 5, 4, 3, 2]\n",
+      "[10, 8, 6, 4, 2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# range\n",
+    "# 수지 범위를 이용해 리스트를 만들어준다\n",
+    "\n",
+    "a = range(10)\n",
+    "print(list(a)) #출력 할때는 list 함수 사용\n",
+    "\n",
+    "b = range(1,11)\n",
+    "print(list(b))\n",
+    "\n",
+    "c = range(1,11,2)\n",
+    "print(list(c))\n",
+    "\n",
+    "d = range(10,1,-1) #1~10까지 2씩증가\n",
+    "print(list(d))\n",
+    "\n",
+    "e = range(10,0,-2) #10~0까지 -2씩증가\n",
+    "print(list(e))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "05c6af66-71d8-4110-92dc-26162f368cd0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "55\n"
+     ]
+    }
+   ],
+   "source": [
+    "add = 0\n",
+    "#1~10 까지 더하기\n",
+    "for i in range(1,11): #1~10까지 리스트\n",
+    "    add += i\n",
+    "print(add)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "f04c2e49-f566-4f57-b010-20ae93e098b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "unterminated f-string literal (detected at line 3) (2157636590.py, line 3)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  Cell \u001b[1;32mIn[68], line 3\u001b[1;36m\u001b[0m\n\u001b[1;33m    print(f'{i} X {j} = {i * j})\u001b[0m\n\u001b[1;37m          ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m unterminated f-string literal (detected at line 3)\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(2,10):\n",
+    "    for j in range(1, 10):\n",
+    "        print(f'{i} X {j} = {i * j})\n",
+    "     priny('')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "654d0e16-761b-4bb0-bf30-66b5932037c6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3, 4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#리스트 컴프리헨션: 리스트 안에 for문 사용\n",
+    "a = [1,2,3,4]\n",
+    "result = [num * 3 for num in a]\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 72,
+   "id": "047b99f4-1ae6-4f6c-a692-25fdce153e14",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "unsupported operand type(s) for -: 'list' and 'list'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[72], line 2\u001b[0m\n\u001b[0;32m      1\u001b[0m a  \u001b[38;5;241m=\u001b[39m [\u001b[38;5;241m1\u001b[39m,\u001b[38;5;241m2\u001b[39m,\u001b[38;5;241m3\u001b[39m,\u001b[38;5;241m4\u001b[39m]\n\u001b[1;32m----> 2\u001b[0m result \u001b[38;5;241m-\u001b[39m [num \u001b[38;5;241m*\u001b[39m \u001b[38;5;241m3\u001b[39m \u001b[38;5;28;01mfor\u001b[39;00m num \u001b[38;5;129;01min\u001b[39;00m a \u001b[38;5;28;01mif\u001b[39;00m num \u001b[38;5;241m%\u001b[39m \u001b[38;5;241m2\u001b[39m \u001b[38;5;241m==\u001b[39m \u001b[38;5;241m0\u001b[39m] \n\u001b[0;32m      3\u001b[0m \u001b[38;5;28mprint\u001b[39m(result)\n",
+      "\u001b[1;31mTypeError\u001b[0m: unsupported operand type(s) for -: 'list' and 'list'"
+     ]
+    }
+   ],
+   "source": [
+    "a  = [1,2,3,4]\n",
+    "result - [num * 3 for num in a if num % 2 == 0] \n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "b08563db-e7b5-48bb-bcbb-ed17df2c3c9e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "안녕하세요.\n",
+      "안녕하세요.\n",
+      "안녕하세요.\n",
+      "안녕하세요.\n",
+      "안녕하세요.\n"
+     ]
+    }
+   ],
+   "source": [
+    "for _ in range(5):\n",
+    "    print('안녕하세요.')\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7394322b-8094-47a8-bdc3-80a3080482d6",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
